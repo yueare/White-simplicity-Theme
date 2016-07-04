@@ -1,8 +1,8 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
-<?php $this->need('controls.php'); ?>
+<!-- <?php $this->need('controls.php'); ?> -->
 <article class="post single">
-	<div class="blog-banner">
+	<div class="blog-banner-page">
 		<?php $thumb = thumbnail($this,'970x420',true);if(!$thumb):?>
 			<?php $thumb = $this->options->themeUrl.'/img/banner.jpg';?>
 		<?php endif;?>

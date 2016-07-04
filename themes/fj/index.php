@@ -2,9 +2,9 @@
 /**
  * 响应式单栏主题,自定义Banner，
  * 请保留作者的信息。Thank you 
- * @package 白-简约#FFF
+ * @package 白-简约-Yueare
  * @author 风久宥
- * @version 1.0
+ * @version 1.2
  * @link http://www.yueare.com
  * @
  */
@@ -12,7 +12,7 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php');
  ?>
-<?php $this->need('controls.php'); ?>
+
 <?php if (!empty($this->options->blogBanner)): ?>
 	<?php $this->request->setParam('cid',$this->options->blogBanner); $this->widget('Widget_Archive@banner','type=post')->to($blogBanner);$this->request->setParam('cid','');?>
 	<div class="blog-banner">
@@ -54,7 +54,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
    			if($pictures[$i]!=null)
    			{
    		?>
-   			<li><img src="<?php echo $pictures[$i] ?>" /></li>
+   			<li><img class="roll-img" src="<?php echo $pictures[$i] ?>" /></li>
 		<?php 
    			}
    		}

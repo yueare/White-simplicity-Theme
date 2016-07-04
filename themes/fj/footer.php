@@ -5,13 +5,18 @@
 	<div class="footer-inner">
 		<p><?php $this->options->description(); ?></p>
         <p>&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>Theme designed by 
-		<?php _e('<a href="https://www.yueare.com" target="_blank">风久宥</a>'); ?>
+		<?php _e('<a href="http://www.yueare.com/" target="_blank">风久宥</a>'); ?>
 			<?php if ($this->options->siteIcp): ?>
 			<br/><a href="http://www.miitbeian.gov.cn/" target="blank"><?php $this->options->siteIcp(); ?></a>
 			<?php endif; ?>
 			<?php if($this->options->siteStat):?><?php $this->options->siteStat();?><?php endif;?>
 		</p>
+		<!-- 友情链接 -->
+		 <ul class="tag-list">
+			<?php Links_Plugin::output(null,0,'');?>
+		</ul>
     </div>
+
 </footer><!-- end #footer -->
 </div>
 <div id="scroll">
@@ -20,6 +25,10 @@
 	<a href="#comments" data-scroll="1"><i class="fa fa-comment-o"></i></a>
 	<?php endif;?>
 </div>
+
+
+
+
 
 <?php if ($this->is('post')) :?>
 <script src="<?php $this->options->themeUrl('js/highlight.min.js'); ?>"></script>

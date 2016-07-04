@@ -15,7 +15,7 @@
 		<h1><?php _e('搜索文章'); ?></h1>
 		<form id="site-srh-form" method="post" action="./">
 			<input type="text" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" />
-			<button type="submit" class="submit btn"><?php _e('搜索'); ?></button>
+			<button type="submit" class="submit btn" style="float: right;"><?php _e('搜索'); ?></button>
 		</form>
 	</div>
 </div>

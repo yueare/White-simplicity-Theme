@@ -2,9 +2,18 @@ $(function(){
 	$('.btn-toggle').click(function(){
 		var toggle = '.'+$(this).data('toggle')+'-panel';
 		if($(toggle).hasClass('active')){
-			$(toggle).removeClass('active');
+			
+			$(toggle).addClass('active').slideToggle(150);
+			
 		}else{
-			$(toggle).addClass('active').siblings().removeClass('active');
+			
+			//$(toggle).addClass('active').siblings().removeClass('active');
+			
+
+
+			$(toggle).removeClass('active').slideToggle(150);
+
+	
 		}
 		return false;
 	});
